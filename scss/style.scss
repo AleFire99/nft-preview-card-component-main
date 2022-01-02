@@ -1,9 +1,86 @@
+
 body{
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
+
+    background-color: var(--clr-main);
+
+    font-family: var(--ff-normal);
 }
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+
+    //breakpoints
+    --bp-mobile: 375px;
+    --bp-desktop: 1440px;
+
+    //primary colors
+    --clr-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+
+    //neutral colors
+    --clr-main: hsl(217, 54%, 11%);
+    --clr-card: hsl(216, 50%, 16%);
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    //font sizes
+    --fs-par: 18px;
+
+    //font family
+    --ff-normal: 'Outfit', sans-serif;
+
+    //font weights
+    --fw-normal: 300;
+    --fw-bold: 400;
+    --fw-black: 600;
+}
+
+.card{
+    background: var(--clr-card);
+
+    margin: 3em auto;
+    padding: 2em 3.5em;
+    text-align: left;
+    
+
+    width: 75%;
+    border-radius: 15px;
+
+    color: var(--clr-blue);
+
+    
+
+    .image{
+        width: 90%;
+        border-radius: 15px;
+        
+    }
+
+    .name{
+        color: var(--clr-white);
+        margin-right: 4.8em;
+        font-size: 33px;
+    }
+    
+    .description{
+        margin-right: 1.4em;
+        font-size: 25px;
+    }
+
+    .value{
+        display: flex;
+        justify-content: space-between;
+
+        .time{
+            img{
+                width: 2em;
+            }
+        }
+    }
+}

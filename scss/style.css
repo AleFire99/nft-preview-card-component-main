@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--clr-main);
+  font-family: var(--ff-normal);
 }
 
 .attribution {
@@ -11,4 +13,50 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+:root {
+  --bp-mobile: 375px;
+  --bp-desktop: 1440px;
+  --clr-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-main: hsl(217, 54%, 11%);
+  --clr-card: hsl(216, 50%, 16%);
+  --clr-line: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+  --fs-par: 18px;
+  --ff-normal: "Outfit", sans-serif;
+  --fw-normal: 300;
+  --fw-bold: 400;
+  --fw-black: 600;
+}
+
+.card {
+  background: var(--clr-card);
+  margin: 3em auto;
+  padding: 2em 3.5em;
+  text-align: left;
+  width: 75%;
+  border-radius: 15px;
+  color: var(--clr-blue);
+}
+.card .image {
+  width: 90%;
+  border-radius: 15px;
+}
+.card .name {
+  color: var(--clr-white);
+  margin-right: 4.8em;
+  font-size: 33px;
+}
+.card .description {
+  margin-right: 1.4em;
+  font-size: 25px;
+}
+.card .value {
+  display: flex;
+  justify-content: space-between;
+}
+.card .value .time img {
+  width: 2em;
 }/*# sourceMappingURL=style.css.map */
